@@ -1,4 +1,4 @@
-   // Función para copiar el código al portapapeles
+  // Función para copiar el código al portapapeles
 function copyToClipboard() {
     const textarea = document.getElementById("generatedCode");
     textarea.select(); // Seleccionar el contenido del textarea
@@ -44,23 +44,6 @@ async function handleImageUpload() {
                     // Colocar la URL en el input de texto
                     document.getElementById("iconUrlInput").value = data;
 
-                    // Paso 2: Guardar la URL en MockAPI
-                    const mockApiResponse = await fetch('https://670099c34da5bd2375545baa.mockapi.io/api/bsz/hotsdata', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({ url: data })
-                    });
-
-                    if (mockApiResponse.ok) {
-                        console.log("URL guardada exitosamente en MockAPI.");
-                        checkIcon.style.display = 'inline';
-                        setTimeout(() => checkIcon.style.display = 'none', 3000);
-                    } else {
-                        console.error("Error al guardar la URL en MockAPI.");
-                        alert("La URL no se pudo guardar correctamente.");
-                    }
                 } else {
                     console.error("Error en la carga del archivo:", data);
                     alert("Hubo un problema al subir el archivo. Por favor, inténtalo de nuevo.");
