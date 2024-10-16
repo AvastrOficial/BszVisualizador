@@ -1,0 +1,65 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contador de Visualizaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<body>
+    <div class="cuadrado">
+    <h1>Generador de Contador de Visualizaciones</h1>
+<div class="cuadrado2">
+    <label for="urlInput">URL o Nick:</label>
+    <input type="text" id="urlInput" placeholder="Ingresa la URL o Nick" />
+
+    <label for="labelInput">Etiqueta:</label>
+    <input type="text" id="labelInput" placeholder="Ingresa la etiqueta" />
+
+    <label for="colorSelect">Selecciona un color:</label>
+    <select id="colorSelect" onchange="updateColorInput()">
+        <option value="0">Acua</option>
+        <option value="12">Negro y blanco</option>
+        <option value="14">Negro y gris</option>
+        <option value="1">Azul fuerte</option>
+        <option value="6">Azul morado</option>
+        <option value="8">Verde menta</option>
+        <option value="9">Verde celeste</option>
+        <option value="3">Verde</option>
+        <option value="10">Rojo rosa claro</option>
+        <option value="7">Rojo rosa</option>
+        <option value="2">Amarillo oro</option>
+        <option value="4">Glinda</option>
+        <option value="5">Rosa glinda</option>
+        <option value="11">Morado</option>
+        <option value="13">Verde menta azulado</option>
+    </select>
+
+    <label for="iconUrlInput">URL del Icono:</label>
+    <input type="text" id="iconUrlInput" placeholder="Ingresa el URL del icono personalizado" />
+
+    <label for="redirectUrlInput">URL de Redirección (opcional):</label>
+    <input type="text" id="redirectUrlInput" placeholder="Ingresa la URL de redirección" />
+
+
+        <button onclick="handleImageUpload()">
+            <i class="fas fa-paper-plane"></i> Subir y Obtener URL
+        </button>
+        <span id="checkIcon">✔</span>
+
+
+    <button onclick="generateCode()">Generar</button>
+    </div>
+    <h3>Visualización :</h3>
+    <div id="result">
+        <div id="generatedContainer">
+            <a id="clickableDiv" href="#" target="_blank" style="cursor: default;">
+                <img id="backgroundIcon" />
+                <img id="overlayIcon" />
+            </a>
+        </div>
+    </div>
+
+    <textarea id="generatedCode" readonly placeholder="El código HTML generado aparecerá aquí"></textarea>
+    <button onclick="copyToClipboard()">Copiar Código</button>
+</div>
+</body>
+</html>
