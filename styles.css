@@ -1,0 +1,96 @@
+  /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        select, button, input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #checkIcon {
+            display: none;
+            color: green;
+            margin-left: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+        #generatedContainer {
+            position: relative;
+            display: inline-block;
+        }
+        #backgroundIcon {
+            display: block;
+            width: 100px; /* Ajusta el tamaño del icono */
+        }
+        #overlayIcon {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 28px; 
+            height: 28px; 
+            border-radius: 50%; /* Para que sea circular */
+        }
+        textarea {
+            width: 96%;
+            height: 100px;
+            resize: none;
+           border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+       .cuadrado {
+            margin-top: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc; /* Borde del contenedor */
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+            text-align: center;
+            position: relative;
+        }
+      
+.cuadrado2 {
+    margin: 20px auto; /* Centra horizontalmente */
+    background-color: #f9f9f9; /* Color de fondo más suave */
+    padding: 30px; /* Mayor relleno para más espacio interior */
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    text-align: left; /* Alinea el texto a la izquierda */
+    position: relative;
+    width: 100%; /* Ancho del cuadrado */
+    max-width: 90%; /* Ancho máximo incrementado */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+label {
+    display: block; /* Asegura que las etiquetas ocupen toda la línea */
+    margin: 12px 0 6px; /* Espacio entre la etiqueta y los inputs */
+    font-weight: bold; /* Etiquetas en negrita */
+    color: #333; /* Color de texto más oscuro */
+}
+
+input, select {
+    width: 100%; /* Hace que los inputs y selects ocupen el ancho total */
+    padding: 10px; /* Relleno para los inputs */
+    border-radius: 10px; /* Bordes más redondeados */
+    border: 1px solid #007BFF; /* Bordes de color azul */
+    margin-bottom: 15px; /* Espacio entre los inputs */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+
+input:focus, select:focus {
+    border-color: #0056b3; /* Color del borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+      
